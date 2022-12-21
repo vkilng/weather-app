@@ -12,7 +12,7 @@ html,body {
 }
 
 .search-container {
-    background-color: #0c4a6e;
+    background-image: linear-gradient(to right,#27272a,#71717a);
     display: grid;
     justify-content: center;
     padding: 3vw;
@@ -70,4 +70,100 @@ html,body {
 .search-option:hover {
     box-shadow: 0.1vw 0 0.3vw grey inset;
     border-radius: 1vw;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1vw;
+    font-size: 0.7rem;
+    color: #94a3b8;
+    border-bottom: 1px solid #94a3b8;
+}
+.navigation div:hover {
+    cursor: pointer;
+    color: #38bdf8;
+}
+.navigation div.focused {color: black; cursor: auto;}
+
+.main-content {
+    padding: 2vw;
+}
+
+.content-one, .content-two {
+    padding: 1vw 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-side div, .right-side {
+    padding: 1vw;
+    font-size: 0.8rem;
+}
+.left-side .todays-date {
+    font-weight: bold;
+}
+.left-side .temp {
+    font-size: 2.5rem;
+}
+.left-side .temp::after {
+    content: "\00a0 \00b0 C";
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+.right-side {
+    display: grid;
+    gap: 2vw;
+    white-space: nowrap;
+    text-align: center;
+    align-self: end;
+}
+.right-side img {
+    width: 15vw;
+    height: 15vw;
+    justify-self: end;
+}
+.right-side div::first-letter {
+    text-transform: capitalize;
+}
+
+.sunrise, .sunset {
+    text-align: center;
+    display: grid;
+    gap: 1vw;
+    width: 17vw;
+    padding: 1vw;
+    white-space: nowrap;
+}
+.sunrise div, .sunset div {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+.sunrise div:first-of-type, .sunset div:first-of-type {
+    font-size: 0.7rem;
+}
+
+.content-three {
+    padding: 1vw 6vw;
+    padding-bottom: 8vw;
+    display: grid;
+    gap: 1vw;
+}
+.content-three > div {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+}
+.content-three > div:nth-of-type(4) > div:last-of-type {
+    display: flex;
+    align-items: center;
+}
+.content-three i {
+    font-variation-settings: 'FILL' 1;
+    font-size: 1rem;
+    transform: rotate(180deg);
+    color: grey;
 }
