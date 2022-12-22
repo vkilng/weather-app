@@ -11,19 +11,28 @@
     <title>Weather</title>
 </head>
 <body>
-    <div class="search-container">
-        <div>
-            <i class="material-symbols-rounded">&#xe8b6</i>
-            <input type="text" placeholder="Search places" value="boston" required />
+    <div class="upper-container">
+        <div class="header">
+            <div>The Damn Weather</div>
+            <div class="attribution">Powered by <a href="https://photon.komoot.io">photon</a> and <a href="https://openweathermap.org/">OpenWeatherMap</a></div>
         </div>
-        <div class="drop-down"></div>
+        <div class="search-container">
+            <div>
+                <i class="material-symbols-rounded">&#xe8b6</i>
+                <input type="text" placeholder="search as you type" value="boston" required />
+            </div>
+            <div class="drop-down"></div>
+        </div>
+        <div class="navigation">
+            <div class="focused">Current Weather</div>
+            <span>|</span>
+            <div>Forecast</div>
+        </div>
+        <div class="main-content"></div>
     </div>
-    <div class="navigation">
-        <div class="focused">Current Weather</div>
-        <span>|</span>
-        <div>Forecast</div>
-    </div>
-    <div class="main-content"></div>
+    <footer>
+        An OpenWeatherMap project run by <a href="https://github.com/vkilng">vkilng&nbsp;<img src="./resources/GitHub-Mark-Light-32px.png"/></a>
+    </footer>
     <script src="./main.js"></script>
 </body>
 </html>
